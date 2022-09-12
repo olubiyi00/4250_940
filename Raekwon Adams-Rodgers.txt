@@ -1,6 +1,5 @@
-HTML
-CSS
-Python
-SQL database
-Git and Github
-API development
+Languages: Python, HTML, CSS, Java, C#, SQL
+works well with others
+experienced in Git and Github
+have previously built web applications
+has scrum experience from my previous 2 internships
