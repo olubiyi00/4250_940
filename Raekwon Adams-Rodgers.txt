@@ -1,0 +1,6 @@
+HTML
+CSS
+Python
+SQL database
+Git and Github
+API development
