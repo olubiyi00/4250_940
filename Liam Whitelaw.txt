@@ -1,0 +1,10 @@
+Proficient in the Java language
+- Threading and the rules in the JLS on memory visibility
+- Bytecode manipulation
+- Have built OpenJDK from source
+Some experience in JavaScript
+- Use of XHRs to query PHP pages to manipulate the server state
+Used PHP, HTML, and basic CSS
+- Dashboard UI generation in past classes
+Experience with command-line git and GitHub
+Knowledgable about unusual ways to structure code + some experimentation in compiler parsers
