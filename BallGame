@@ -1,2 +1,9 @@
 Please add your name here as a header then indent and add all your requirements for this problem.
-
+Brandon Beaudry
+  -Ball Object must bounce off side of screen
+  -User must have mouse control
+  -User must be able to draw on screen
+  -Ball Object must bounce off of 3 pixel or greater size objects drawn by User
+  -Ball Object must have starting velocity
+  -Ball Object may have custom velocity
+  -Ball Object may have static velocity
