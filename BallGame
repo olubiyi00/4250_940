@@ -1,2 +1,10 @@
 Please add your name here as a header then indent and add all your requirements for this problem.
 
+Robert Locicero
+  The ball must bounce off the sides of the screen.
+  The ball must bounce of drawings larger thanb 3 pixels.
+  The user must be able to draw using their mouse.
+  The user may start the game.
+  The user may stop the game.
+  The user may clear their obstacles drawn.
+  The ball must move.
