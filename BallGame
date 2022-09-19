@@ -1,2 +1,8 @@
-Please add your name here as a header then indent and add all your requirements for this problem.
+Amanda Lee   
+    -The application shall have a moving ball
+    -When the ball collides with the sides of the screen, the ball shall change direction
+    -The application shall allow the user to draw obstacles with the mouse
+    -The application shall detect the size of the user drawn obstacle
+    -When the ball collides with a user drawn obstacle >3 pixels, the ball shall change direction
+    -When the ball collides with a user drawn obstacle <=3 pixels, the ball shall continue on its current path
 
