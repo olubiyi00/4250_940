@@ -1,2 +1,11 @@
-Please add your name here as a header then indent and add all your requirements for this problem.
-
+Austin Hamilton
+  1.	The user must be able to draw to the screen
+  2.	The ball must bounce when it hits the screen
+  3.	The ball must bounce when it hits something the user drew that is wider than 3 pixels
+  4.	The ball can be red
+  5.	The screen can be black
+  6.	The user marks can be blue
+  7.	The program must be able to handle 100 marks
+  8.	The program must be able to be run on Linux, Windows, or Mac
+  9.	The program must have a menu that allows the user to exit
+  10.	The menu must have an option to clear the screen
