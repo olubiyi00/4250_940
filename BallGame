@@ -1,2 +1,9 @@
 Please add your name here as a header then indent and add all your requirements for this problem.
 
+Payne Meade:
+Ball Must Bounce in random Direction
+The ball should not get stuck, or be able to get unstuck
+The speed of the ball is unchanging
+The drawing should not be able to keep the ball from bouncing
+The ball should take up a small part of the screen
+The ball should be able to bounce on the walls of the screen, as well as drawings
