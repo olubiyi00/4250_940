@@ -1,3 +1,24 @@
+Please add your name here as a header then indent and add all your requirements for this problem.
+
+
+Drew Dorris
+  Resolution of program should size to take up half of the user's first monitor
+  The program should have a 2d "surface" for the ball to travel filling the program window
+  The program should have a ball starting in the middle of the screen
+  The ball should be visualized as a circle with radius of 5 pixels and its collision area should be treated as its visualization
+  The ball should have a starting velocity of 10 pixels per second, moving in a random direction
+  The edges of the screen should be treated as obstacles
+  Allow the user to draw obstacles using their mouse
+  The ball should ignore drawings smaller than 3 connected pixels
+  If a pixel is later attached to a collection of pixels, the game understands they are connected and will treat it as an obstacle if it is 3 or more pixels
+  If two existing collections of pixels are connected by the user, the game understands they are connected and will treat it as an obstacle if it is 3 or more pixels
+  The program should appropriately handle mice of different DPIs for drawing the obstacles
+  The ball should travel the opposite direction at the same speed if encountering a perpendicular obstacle
+  The ball should handle dealing with angled surfaces the user draws by calculating the appropriate direction the ball should travel based on the collision and sending the ball that direction
+  The ball should temporarily ignore obstacles that are being drawn directly over the ball's current position -- avoiding unknown behavior
+  The program should not be resizable -- avoiding unnecessary complexity
+
+=======
 Michael Burleson
   The car must have enough power for the distance from the Millenium Center to the McDonalds by the Johnson City Mall.
   The driver must maintain a speed according to speed limits posted.
