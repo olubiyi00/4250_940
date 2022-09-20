@@ -1,5 +1,13 @@
 Please add your name here as a header then indent and add all your requirements for this problem.
 
+Brendan Jones:
+- The user must know how to drive.
+- The user must have a valid drivers' licence.
+- The user must be authorized to drive the car.
+- The car must have non-expired vehicle registration.
+- The car must have enough gas to drive the full distance to the McDonalds.
+- The user must be aware of the location of the McDonalds.
+=======
 
 Drew Dorris
   Resolution of program should size to take up half of the user's first monitor
