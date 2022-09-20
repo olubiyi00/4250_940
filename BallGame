@@ -1,2 +1,76 @@
 Please add your name here as a header then indent and add all your requirements for this problem.
 
+Chase Walton
+  1.	Program must display a moving ball
+  2.	Program must display a screen
+  3.	Program must be defined with a border around sides of screen
+  4.	Ball can not pass through the sides
+  5.	If ball hits sides of screen it must change direction
+  6.	If ball hits an obstacle larger than 3 pixels it must change direction
+  7.	Program must allow user to draw pixels on screen with mouse
+=======
+Amanda Lee   
+    -The application shall have a moving ball
+    -When the ball collides with the sides of the screen, the ball shall change direction
+    -The application shall allow the user to draw obstacles with the mouse
+    -The application shall detect the size of the user drawn obstacle
+    -When the ball collides with a user drawn obstacle >3 pixels, the ball shall change direction
+    -When the ball collides with a user drawn obstacle <=3 pixels, the ball shall continue on its current path
+
+Brandon Beaudry
+  -Ball Object must bounce off side of screen
+  -User must have mouse control
+  -User must be able to draw on screen
+  -Ball Object must bounce off of 3 pixel or greater size objects drawn by User
+  -Ball Object must have starting velocity
+  -Ball Object may have custom velocity
+  -Ball Object may have static velocity
+=======
+
+Austin Hamilton
+  1.	The user must be able to draw to the screen
+  2.	The ball must bounce when it hits the screen
+  3.	The ball must bounce when it hits something the user drew that is wider than 3 pixels
+  4.	The ball can be red
+  5.	The screen can be black
+  6.	The user marks can be blue
+  7.	The program must be able to handle 100 marks
+  8.	The program must be able to be run on Linux, Windows, or Mac
+  9.	The program must have a menu that allows the user to exit
+  10.	The menu must have an option to clear the screen
+=======
+
+Robert Locicero
+  The ball must bounce off the sides of the screen.
+  The ball must bounce of drawings larger thanb 3 pixels.
+  The user must be able to draw using their mouse.
+  The user may start the game.
+  The user may stop the game.
+  The user may clear their obstacles drawn.
+  The ball must move.
+=======
+
+Payne Meade:
+    Ball Must Bounce in random Direction
+    The ball should not get stuck, or be able to get unstuck
+    The speed of the ball is unchanging
+    The drawing should not be able to keep the ball from bouncing
+    The ball should take up a small part of the screen
+    The ball should be able to bounce on the walls of the screen, as well as drawings
+
+=======
+Liam Whitelaw:
+    The user must be able to draw pixels on the screen using the mouse
+    The ball must be red, circular, 10 pixels in size along both dimensions, antialiased.
+    The user pen must be black, 3 pixels diameter, and active when user drags the mouse while clicking
+    The ball must float above all other windows
+    The ball must bounce off the screen
+    The program must be able to account for differing resolutions, DPI, and/or multihead (dual-screen) configuration
+    The program must provide termination via a seperate windowed configuration interface
+    The ball must detect pixels created only by the user pen.
+    The ball must perform collision detection against strokes and determine how to bounce.
+    The ball must have a fixed but user-configurable movement speed
+    The ball must simulate physics in discrete timesteps of 60 ticks per second.
+    The ball must not appear to clip through objects, subject to the above constraint.
+    The program must use less than 5% of active CPU time on processors meeting minimum requirements TBD.
+-
