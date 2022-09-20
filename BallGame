@@ -9,3 +9,31 @@ Austin Hamilton
   8.	The program must be able to be run on Linux, Windows, or Mac
   9.	The program must have a menu that allows the user to exit
   10.	The menu must have an option to clear the screen
+=======
+Please add your name here as a header then indent and add all your requirements for this problem.
+
+
+Payne Meade:
+    Ball Must Bounce in random Direction
+    The ball should not get stuck, or be able to get unstuck
+    The speed of the ball is unchanging
+    The drawing should not be able to keep the ball from bouncing
+    The ball should take up a small part of the screen
+    The ball should be able to bounce on the walls of the screen, as well as drawings
+
+=======
+Liam Whitelaw:
+    The user must be able to draw pixels on the screen using the mouse
+    The ball must be red, circular, 10 pixels in size along both dimensions, antialiased.
+    The user pen must be black, 3 pixels diameter, and active when user drags the mouse while clicking
+    The ball must float above all other windows
+    The ball must bounce off the screen
+    The program must be able to account for differing resolutions, DPI, and/or multihead (dual-screen) configuration
+    The program must provide termination via a seperate windowed configuration interface
+    The ball must detect pixels created only by the user pen.
+    The ball must perform collision detection against strokes and determine how to bounce.
+    The ball must have a fixed but user-configurable movement speed
+    The ball must simulate physics in discrete timesteps of 60 ticks per second.
+    The ball must not appear to clip through objects, subject to the above constraint.
+    The program must use less than 5% of active CPU time on processors meeting minimum requirements TBD.
+-
