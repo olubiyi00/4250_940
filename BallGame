@@ -1,3 +1,5 @@
+Please add your name here as a header then indent and add all your requirements for this problem.
+
 Austin Hamilton
   1.	The user must be able to draw to the screen
   2.	The ball must bounce when it hits the screen
@@ -10,8 +12,16 @@ Austin Hamilton
   9.	The program must have a menu that allows the user to exit
   10.	The menu must have an option to clear the screen
 =======
-Please add your name here as a header then indent and add all your requirements for this problem.
 
+Robert Locicero
+  The ball must bounce off the sides of the screen.
+  The ball must bounce of drawings larger thanb 3 pixels.
+  The user must be able to draw using their mouse.
+  The user may start the game.
+  The user may stop the game.
+  The user may clear their obstacles drawn.
+  The ball must move.
+=======
 
 Payne Meade:
     Ball Must Bounce in random Direction
