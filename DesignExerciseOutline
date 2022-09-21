@@ -22,7 +22,7 @@ Make a sequence diagram for the application that shows the actors and objects in
 SO, how do you start? Refer back to Problem Solving… Break the problem (which is to generate a design document by the end of class) down into smaller more solvable problems. A problem with a straightforward solution is a task, not a problem. 
 Secondly, the team can work together on each piece or you can divide up into sub teams (if you divide up, I recommend doing an initial brainstorming so each sub team is operating within the same context).
 
-To help you get started, I’ve already created the Requirements document (BucHuntRequirements) and the Problem Identification and Definition (PID) document (BucHunt Iteration 1 PID) for you and placed them in the shared repository (just sync your fork to see them). 
+To help you get started, I’ve already created the Requirements document (BucHuntUserStories) and the Problem Identification and Definition (PID) document (BucHunt Iteration 1 PID) for you and placed them in the shared repository (just sync your fork to see them). 
 As you look at these documents, compare how these are written and presented to what you generated in the Requirements exercise.
 And, yes, there are missing elements to the PID but you have enough to get started and to give you examples.
 Also, the PID is NOT a design document, it is a summation and pre-condition to the design sometimes used.
