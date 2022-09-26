@@ -94,7 +94,7 @@ public class IMPLLiamWhitelaw {
 			return number;
 		}
 		// otherwise we have multiple digits
-		int leastSigDigit = Math.abs(number % 10); // % can return negative remainders, this is not wanted
+		int leastSigDigit = Math.abs(number % 10); // % can return negative remainders, this is not wanted. Assuming here the slice is always going to be a positive LSD since intuitively that is how one would slice it graphically.
 		int remainingDigits = number / 10;
 		// sum the LSD with the remaining digits, checking overflow, then recurse on this value
 		return splitAndAddLeastSigDigit(Math.addExact(remainingDigits, leastSigDigit)); // throws ArithmeticException
