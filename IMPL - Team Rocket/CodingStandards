@@ -1,0 +1,18 @@
+Naming Conventions: 
+  Classes: Pascal case
+  Attributes: CamelCase
+  Methods: Pascal case
+  Local Variables: CamelCase
+  
+Indentation: Tab
+
+White space between methods: Yes
+
+Error codes vs Status codes vs Exceptions: End program if unexpected input
+
+Class sizes: 1 for this project
+Method sizes: 2 methods for this project
+
+Object and pointers: Check for NULL
+
+Variables: Initialize at declaration
