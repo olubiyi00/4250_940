@@ -1,0 +1,122 @@
+Please add your name here as a header then indent and add all your requirements for this problem.
+
+Victoria Dixon
+  Car with no interfering issues
+  Driver with no problems that prevents them from being able to drive
+  Key/Keyfob
+  Drivers license
+  Gas in the tank to make the trip
+  Knowledge of area or way to access directions
+  Knowledge of how to use map or gps
+  
+=======
+
+Brendan Jones:
+- The user must know how to drive.
+- The user must have a valid drivers' licence.
+- The user must be authorized to drive the car.
+- The car must have non-expired vehicle registration.
+- The car must have enough gas to drive the full distance to the McDonalds.
+- The user must be aware of the location of the McDonalds.
+
+=======
+
+Drew Dorris
+  Resolution of program should size to take up half of the user's first monitor
+  The program should have a 2d "surface" for the ball to travel filling the program window
+  The program should have a ball starting in the middle of the screen
+  The ball should be visualized as a circle with radius of 5 pixels and its collision area should be treated as its visualization
+  The ball should have a starting velocity of 10 pixels per second, moving in a random direction
+  The edges of the screen should be treated as obstacles
+  Allow the user to draw obstacles using their mouse
+  The ball should ignore drawings smaller than 3 connected pixels
+  If a pixel is later attached to a collection of pixels, the game understands they are connected and will treat it as an obstacle if it is 3 or more pixels
+  If two existing collections of pixels are connected by the user, the game understands they are connected and will treat it as an obstacle if it is 3 or more pixels
+  The program should appropriately handle mice of different DPIs for drawing the obstacles
+  The ball should travel the opposite direction at the same speed if encountering a perpendicular obstacle
+  The ball should handle dealing with angled surfaces the user draws by calculating the appropriate direction the ball should travel based on the collision and sending the ball that direction
+  The ball should temporarily ignore obstacles that are being drawn directly over the ball's current position -- avoiding unknown behavior
+  The program should not be resizable -- avoiding unnecessary complexity
+
+=======
+
+Michael Burleson
+  The car must have enough power for the distance from the Millenium Center to the McDonalds by the Johnson City Mall.
+  The driver must maintain a speed according to speed limits posted.
+  The driver must have the fastest route available.
+  The driver must have the most scenic route available.
+  The driver must have access to a GPS.
+  There must be at least one accessible route from the Millenium Center to the McDonalds by the Johnson City Mall.
+  The driver may experience unforseen delays such as weather or traffic.
+
+=======
+Raekwon Adams-Rodgers
+•	You must have a functioning car capable to drive to McDonalds
+    o	  The care must have 4 good tires to drive on
+    o	The car must have a running engine to run the car
+•	You can take any route from the millennium center to the Mcdonalds
+•	You must have directions to the mcdonalds
+    o	You can have prior knowledge to getting to the mcdonalds
+    o	You can use GPS if you don’t have knowledge of where the Mcdonalds is
+•	You must have gas in your car to get from the millennium center to the McDonalds
+•	You must have a drivers license to drive to the Mcdonalds
+
+=======
+
+Alec Ratner
+1. Must have a functioning vehicle
+2. Car must have a person to drive
+3. Car must have enough gas to make the trip
+4. Must have directions to get there
+5. The driver must have a legal drivers license
+6. There must be room to park at the Johnson City Mall
+=======
+
+Elliott Kaferle
+Needs a car.
+Car needs gas.
+Roads need to be functioning.
+the car may need a turn signal.
+the car may need windshield wippers.
+the driver may need a GPS
+The driver needs directions.
+
+=======
+
+Christian Calhoun
+-The driver must have a license
+-The driver must have a car
+-The driver must know how to drive
+-The driver must know their exact starting point
+--Are they starting on foot?
+--Where did they park?
+-The driver must know their exact destination
+-What route do they want to take? 
+--Scenic? 
+--Quickes? 
+--Most effiecent?
+-What time do they need to be at their destination
+-Are there any other stops the driver must make?
+
+
+=======
+
+Raj Patel
+The driver must have a valid license.
+The driver must be aware of surroundings
+The driver must have a working car
+Car should have enough gas
+The driver should be in the right state of mind
+The driver needs to follow speed limits
+Driver should have a gps to get directions
+
+=======
+Olubiyi OLuwatofunmi
+The driver must have a standard car
+The driver must know how to drive
+The car should be in a good condition
+The driver must have/know the directions to Mcdonalds
+The driver must make sure its the mcdonald by the johnson city mall
+The driver must be starting from the millenum center
+
+
