@@ -24,7 +24,7 @@ def addLeastSignificantDigit(num1, num2):
 # Returns the number of digits in num
 def getNumDigits(num):
     try:
-        if(num < 1):
+        if(num < 0):
             # Get number of "digits" of negative number by making it positive
             num = num * -1
         return floor(log10(num) + 1)
@@ -40,8 +40,6 @@ try:
     # 1. Add the 2 numbers given.
     # 2. Call addLeastSignificantDigit to add each digit of num1 and num2 to the sum from step 1.
     answer = num1 + num2 + addLeastSignificantDigit(num1, num2)
-    print(answer)
-    print(getNumDigits(answer))
     if(getNumDigits(answer) != 1):
         # Non-single digit final answer. Notify the user and exit.
         print('Final answer is not a single digit. Please try again with different inputs.')
