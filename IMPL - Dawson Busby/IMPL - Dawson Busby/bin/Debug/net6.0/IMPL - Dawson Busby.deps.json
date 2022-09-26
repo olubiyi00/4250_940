@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "IMPL - Dawson Busby/1.0.0": {
+        "runtime": {
+          "IMPL - Dawson Busby.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IMPL - Dawson Busby/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

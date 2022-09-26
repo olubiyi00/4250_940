@@ -1,0 +1,15 @@
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\bin\Debug\net6.0\IMPL - Dawson Busby.exe
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\bin\Debug\net6.0\IMPL - Dawson Busby.deps.json
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\bin\Debug\net6.0\IMPL - Dawson Busby.runtimeconfig.json
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\bin\Debug\net6.0\IMPL - Dawson Busby.dll
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\bin\Debug\net6.0\IMPL - Dawson Busby.pdb
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.csproj.AssemblyReference.cache
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.AssemblyInfoInputs.cache
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.AssemblyInfo.cs
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.csproj.CoreCompileInputs.cache
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.dll
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\refint\IMPL - Dawson Busby.dll
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.pdb
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\IMPL - Dawson Busby.genruntimeconfig.cache
+C:\Users\dawso\source\repos\IMPL - Dawson Busby\IMPL - Dawson Busby\obj\Debug\net6.0\ref\IMPL - Dawson Busby.dll

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMPL - Dawson Busby", "IMPL - Dawson Busby\IMPL - Dawson Busby.csproj", "{58E9EAAF-C73E-44F1-9682-0EBB8DBADF24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58E9EAAF-C73E-44F1-9682-0EBB8DBADF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E9EAAF-C73E-44F1-9682-0EBB8DBADF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E9EAAF-C73E-44F1-9682-0EBB8DBADF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E9EAAF-C73E-44F1-9682-0EBB8DBADF24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {223C8D52-D256-42BE-9B24-11303D705042}
+	EndGlobalSection
+EndGlobal
