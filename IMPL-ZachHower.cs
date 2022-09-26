@@ -24,21 +24,20 @@ namespace Exercise
             int secondNumber; 
             int.TryParse(Console.ReadLine(), out secondNumber);
 
-            //Test numbers if valid enough
+            //Test numbers if valid enough to continue, negatives, letters or too low of value numbers will be reject and program will end.
             if (firstNumber <= 10 && secondNumber <= 10)
+            {
+                Console.WriteLine("Invalid number set");
+                Console.WriteLine("Press any key to exit.");
+                Console.Read();
+            }
+            else
             {
                 Console.WriteLine("Alright you have entered: " + firstNumber + " and " + secondNumber + ". Now working magic: ");
                 //Call the recursive function. 
                 Console.WriteLine(RecursiveFunctionOne(firstNumber, secondNumber) + "Is the final ending number.");
 
                 Console.WriteLine("Done. Press any key to exit.");
-                Console.Read();
-
-            }
-            else
-            {
-                Console.WriteLine("Invalid number set");
-                Console.WriteLine("Press any key to exit.");
                 Console.Read();
             }
         }
