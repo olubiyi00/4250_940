@@ -1,0 +1,102 @@
+import java.util.Objects;
+import java.util.Scanner;
+
+// This will be considered done once implementation, documentation are written, and tested satisfactorily.
+
+/*
+ * Test cases:
+ * 0			0			=> 0			OK
+ * 1			2			=> 3			OK
+ * 10			20			=> 3			OK
+ * 12			25			=> 1			OK
+ * apple		orange		=> not defined	OK
+ * 2147483647	2147483647	=> overflow		OK
+ * -1			-1			=> -2			OK
+ * -10			-20			=> -3			OK
+ */
+
+/**
+ * Main class for running a program that takes input from the user
+ * as two numbers, adds them together, then recursively seperates
+ * the least significant digit, adding it to the remaining digits
+ * until the number is only one digit remaining.
+ * @author Liam Whitelaw
+ */
+public class IMPLLiamWhitelaw {
+	/**
+	 * Main entry point, taking no meaningful arguments.
+	 * @param args The arguments from the command line, which are ignored.
+	 */
+	public static void main(String[] args) {
+		int number1 = promptForNumber("Enter the first number: ");
+		int number2 = promptForNumber("Enter the second number: ");
+		try {
+			int resultDigit = addAndRecurse(number1, number2);
+			System.out.println("The single remaining digit is " + resultDigit);
+		} catch (ArithmeticException ex) {
+			// Overflow occurred, we cannot continue
+			System.out.println("Overflowed in calculations; no result.");
+		}
+	}
+	
+	/**
+	 * Prompt for a number using the given prompt, and loop until the user gives a
+	 * valid integer input, returning the value the user entered.
+	 * @param prompt The prompt to display to the user.
+	 * @return The integer the user entered.
+	 */
+	private static int promptForNumber(String prompt) {
+		Objects.requireNonNull(prompt,"prompt is null");
+		int userInteger = 0; // value for user's input as int.
+		String currentLine; // the last line of input we got from user
+		Scanner scanin = new Scanner(System.in); // used for getting line-by-line input from the user
+		boolean haveValidInput = false; // did we get a valid input?
+		// loop until the input is something we consider valid
+		while (!haveValidInput) {
+			// print prompt, wait for line
+			System.out.print(prompt);
+			currentLine = scanin.nextLine();
+			try {
+				userInteger = Integer.parseInt(currentLine); // exception will throw here
+				// success, so break the loop
+				haveValidInput = true;
+			} catch (NumberFormatException ex) {
+				// The user did not enter a valid integer, so say so. Reprompt will happen on next loop
+				System.out.println("\"" + currentLine + "\" is not a valid integer.");
+			}
+		}
+		return userInteger;
+	}
+	
+	/**
+	 * Adds n1 and n2, then recursively seperates the least significant digit from the sum,
+	 * adding it to the remaining digits until one digit remains.
+	 * @param n1 The first number to add.
+	 * @param n2 The second number to add.
+	 * @return The single-digit number produced.
+	 * @throws ArithmeticException if adding two numbers would cause overflow
+	 */
+	private static int addAndRecurse(int n1, int n2) {
+		int sum = Math.addExact(n1,n2); // throws ArithmeticException
+		return splitAndAddLeastSigDigit(sum); // throws ArithmeticException
+	}
+	
+	/**
+	 * Take the number, split the least significant digit, then add to the remaining
+	 * digits until one value remains.
+	 * @param number The number to split and recurse over
+	 * @return The single digit result.
+	 * @throws ArithmeticException if adding two numbers would cause overflow
+	 */
+	private static int splitAndAddLeastSigDigit(int number) {
+		if (Math.abs(number) < 10) {
+			// There's only one digit anyway, so return early as nothing to be done
+			return number;
+		}
+		// otherwise we have multiple digits
+		int leastSigDigit = Math.abs(number % 10); // % can return negative remainders, this is not wanted
+		int remainingDigits = number / 10;
+		// sum the LSD with the remaining digits, checking overflow, then recurse on this value
+		return splitAndAddLeastSigDigit(Math.addExact(remainingDigits, leastSigDigit)); // throws ArithmeticException
+	}
+}
