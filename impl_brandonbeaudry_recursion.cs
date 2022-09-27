@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 /* Using Recursion; take two numbers in from the user (a human) and add them together 
@@ -8,6 +8,9 @@ using System.IO;
 
 /* Definition of done: Print to the screen the final input of all additions or the
  * appropriate error message for failure
+ */
+
+/* Assumptions made: The last digit of a negative number is also negative when seperated
  */
 
 public class impl_brandonbeaudry_recursion
@@ -53,19 +56,18 @@ public class impl_brandonbeaudry_recursion
         }
         c = a + b;
 
-        //Remove the last character from c and add it into C, repeat until C is a single number
-        while (c.ToString().Length > 1)
+        /* Remove the last character from c and add it into C, repeat until C is a single number
+         * The first condition checks if the integer to string is longer than 2, continuing for values of 100+ and -10 below
+         * The second condition has two statements. 
+         * The first statement checks if the integer to string is longer than 1, continuing for values of 10+ and -1 below
+         * The second statement requires that the interger is not negative, which means it will not continue for any negative values
+         * Only one has to be valid, so both are invalid for -9 to 9
+         */
+        while (c.ToString().Length > 2 || (c.ToString().Length > 1 && !(c.ToString().Substring(0,1).Equals("-"))))
         {
             int removelast = c / 10;    //with integers, dividing by 10 removes the last value
             int last = c % 10;          //with integer, modulus by 10 keeps only the last value
-            Console.WriteLine (removelast.ToString() + " " + last.ToString());
             c = removelast + last;
-            if (c.ToString().Length.Equals("2") && c.ToString().Substring(0,1).Equals("-"));//if the value is a single digit negative number
-            {
-                Console.WriteLine(c.ToString().Length);
-                Console.WriteLine(c);
-                break;
-            }
         }
 
         Console.WriteLine("Final Value: " + c);
