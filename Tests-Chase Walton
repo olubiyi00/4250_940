@@ -1,0 +1,17 @@
+1.	Can the user launch missiles with only the right mouse button and space bar?
+2.	Does the program prevent launching more than 5 active missiles at a time?
+  a.	Do the missiles go inactive after leaving the screen?
+3.	Is the speed constant for all missiles?
+4.	Do the missiles launch from the center of the bottom of the screen in vertical direction?
+5.	Does the program launch a ship when there are no active ships?
+6.	Are the ships configurable and does the ship image update correctly?
+7.	Do the ships launch from the top two thirds of the right or left side of the screen randomly based on the configurable rate?
+8.	Do the ships travel in the correct direction horizontally?
+9.	Does the program correctly generate a random ship from the available ship types?
+10.	Do the ships travel at different speeds according to the ship type?
+11.	Does the program limit the number of active ships on the screen to 10?
+  a.	Do the ships become inactive after leaving the screen?
+12.	Does the program detect and display an explosion at the location of the ship when a missile intersects it?
+13.	Does the missile and ship disappear from the screen after a missile intersects it?
+14.	Does the hit counter increment for every intercepted ship?
+15.	Does the program end when the hit counter reaches 10, the user clicks the left mouse button or esc key, or if the user hasn’t launched a missile in the last 5 minutes?
