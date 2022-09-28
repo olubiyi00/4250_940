@@ -1,0 +1,52 @@
+Requirements: The solution must initiate a missile launch when the user clicks the right mouse button. 
+The solution must initiate a missile launch when the user presses the spacebar. 
+The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen). 
+The solution must remove the missile from being active if it goes off the screen.
+Conditions: Have no enemy ships on field.
+Test: Have the user click the right mouse button six (6) times before the first missile travels offscreen. 
+Wait for all missiles to despawn by travelling off screen. Repeat one (1) time. 
+After the second wave of missiles is destroyed, have the user press the spacebar six (6) times before the first missile travels offscreen. 
+Wait for all missiles to despawn by travelling off screen. Repeat one (1) time.
+Expected Result: Four (4) volley of five (5) missiles should fire, with the sixth missile in each volley not appearing. 
+All missiles should despawn upon hitting the edge of the screen.
+ 
+Requirements: The solution must launch missiles from the center of the bottom of the screen when a launch is initiated. 
+The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+Conditions: Have no enemy ships on field.
+Test: Record the screen. Use the spacebar or right mouse button to fire the missile. 
+Once this missile despawns, fire another missile and wait for it to despawn. 
+Repeat three (3) more times. After the last missile despawns, stop the recording and find the first frame for each missile launch. 
+Measure the center x coordinate of the missile. Repeat for all missiles and repeat for the last frame of the missile and a randomly chosen frame from each.
+Expected Result: All missiles’ centers will be at the middle x coordinate of the playing field at the fifteen (15) selected frames.
+ 
+Requirement: The solution must maintain the same constant speed for all missiles.
+Conditions: Have no enemy ships on the field.
+Test: Record the screen. Use the spacebar or right mouse button to fire the missile. 
+Once this missile despawns, fire another missile and wait for it to despawn. Repeat three (3) more times. 
+After the last missile despawns, stop the recording and find the first frame for each missile launch. 
+Find the last frame of each missile before it despawns. 
+Subtract the corresponding last frame from its first frame. 
+Divide this value by 2 (two) rounded down and find that frame of the missile. 
+Find the y coordinate of the middle of the missile for all fifteen (15) frames. 
+Subtract the corresponding y coordinate of the last frame of the missile with the first frame, then divide it by two (2).
+Expected Result: All subtractions will result in the same value. 
+The y coordinate of the first, middle, and last frame of each missile should be the same for all five (5) missiles at that frame. 
+The difference between the last and first frame’s y coordinates divided by two (2) should approximately be the y coordinate of the middle frame for all five (5) missiles.
+ 
+Requirements: The solution must initiate a missile launch when the user clicks the right mouse button. 
+The solution must initiate a missile launch when the user clicks the space bar.
+Conditions: Run the unmodified game.
+Test: On the keyboard, press every button except for esc and spacebar one (1) time each in any order. 
+On the mouse, press click button except for the left click and right click (including scroll up, scroll down, mouse wheel press, m3, m4, m5, etc. if applicable) one (1) time each in any order. 
+Do all inputs within five (5) minutes.
+Expected Results: No change will occur on the screen.
+ 
+Requirements: The solution must end the game when the user clicks the left mouse button.
+Conditions: Run the unmodified game.
+Test: Click the left mouse button.
+Expected Result: The game will end.
+ 
+Requirement: The solution must end the game when the user clicks the esc button.
+Conditions: Run the unmodified game.
+Test: On the keyboard, press the esc button.
+Expected Result: The game will end.
