@@ -1,0 +1,65 @@
+Test - Requirement(s) being tested #
+
+Click right mouse button to make sure missile launches (1,2)
+Press space bar to make sure missile launches (1,3)
+Press space bar 6 consecutive times to make sure a sixth missile is not launched (1,3,4)
+Press other mouse buttons/keys to make sure a missile is not fired unless space bar or right mouse button is pressed.
+Wait for a missile to go off screen to make sure it becomes inactive (5)
+Print all active missile's speed during execution to make sure the values remain constant (6)
+Fire a missile and print the coordinates each time it moves to make sure the missile is launched from the center of the bottom of the screen and moves vertically straight up (7,8)
+Fire a missile at a ship and make sure an explosion graphic is displayed if a collision between the two occurs (9,10)
+Fire a missile and make sure both the missile and ship are removed if a collision between the two occurs (11)
+Print the hit counter every time a hit occurs to make sure it is incrementing correctly (12)
+Review the ships that are supported and make sure each ship and ship type follows the proper configurable values and design requirements for ships (13,15)
+Force no ships being on the screen to make sure a ship launch is initiated (14)
+Force each type of ship to be active to make sure the appropriate image is displayed (16)
+Start a game and print the random ship launch rate to make sure 30% is the default value (17)
+Modify the random ship launch rate and start a game and print it to make sure the value is updated properly (17)
+Force a ship launch to occur many times to check that all ship types have an equal chance of being launched (18)
+Place 10 ships on the screen and attempt to place an eleventh to make sure a limit of 10 active ships is in place (19)
+Initiate a ship launch many times and print the coordinates of the randomly calculated ship location to make sure it is random, is placed from the left or right side of the screen, and is located in the top two-thirds of the screen (20,21,22)
+Print the type of ship along with the ship speed of active ships to make sure the right types of ships have the right speed assigned to them (23)
+Place a ship on the left side of the screen and make sure it moves left to right (24)
+Place a ship on the right side of the screen and make sure it move right to left (24)
+Force a ship to move off the screen and make sure it is removed (25)
+Play the game and score 10 hits to make sure the game ends and does not continue running (26)
+Click left mouse button to make sure the game ends and does not continue running (27)
+Press the esc key to make sure the game ends and does not continue running (28)
+Press other (not left mouse button, esc key) mouse buttons/keys to make sure the game does end (27,28)
+Start a game and wait 5 minutes to make sure the game ends at the 5 minute mark and does not continue running (29)
+
+
+Requirements
+
+1.The solution must support missiles launched by the user.
+2.The solution must initiate a missile launch when the user clicks the right mouse button.
+3.The solution must initiate a missile launch when the user clicks the space bar.
+4.The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+5.The solution must remove the missile from being active if it goes off the screen.
+6.The solution must maintain the same constant speed for all missiles
+7.The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+8.The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+
+9.The solution must detect when a missile “hits” a ship
+10.The solution must display an explosion at the point where a missile “hits” a ship
+11.The solution must remove the missile and ship after the missile “hits” the ship
+12.The solution must keep a count of all “hits”
+
+13.The solution must support ships launched by the solution
+14.The solution must initiate a ship launch when the system detects there are no active ships.
+15.The solution must support multiple types of ships based on a configurable value.
+16.The solution must display the appropriate image based on the type of ship when the ship is active
+17.The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+18.The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+19.The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+20.The solution must randomly choose a location to launch a ship from when initiated
+21.The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+22.The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+23.The system must assign the speed of the ship based on the type of the ship being initiated
+24.The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+25.The solution must remove the ship from being active if it goes off the screen.
+
+26.The solution must end the game when the “hit” count has reached ten (10)
+27.The solution must end the game when the user clicks the left mouse button
+28.The solution must end the game when the user clicks the esc button
+29.The solution must end the game if the user has not initiated a missile launch in the last 5 minutes.
