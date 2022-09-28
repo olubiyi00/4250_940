@@ -1,0 +1,16 @@
+1. Test to see if you can launch a missile, and make sure it is done with the right click and spacebar only.
+2. Test to see if you can have five missiles out at a time, and that they are dissapearing correctly (On hit, when you fire a sixth missile, or when they fly off screen)
+3. Test to see if the missile launch is correct (Consistent speed, launch from the correct place, maintain direction)
+
+4. Test missiles hitting a ship (Explosion is displayed, missile and ship are gone, hit counter goes up)
+
+5. Test that ships are launching properly, and that they are launching once no ships are present.
+6. Test that there are multiple types of ships present, that there are equal amountsof them, and that they look/move correctly.
+7. Test that the ships are spawning often enough.
+8. Test that there are not more than 10 ships on the screen at a time.
+9. Test that the ships come from both the left and the right sides randomly, as well as the top two-thirds of the screen.
+10. Test that the ships are removed after they go off screen
+
+11. Test that the game ends once the player has gotten 10 hits.
+12. Test that the user can exit the game on left click, or escape.
+13. Test that the game quits after inactivity of 5 minutes.
