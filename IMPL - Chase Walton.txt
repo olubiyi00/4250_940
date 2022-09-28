@@ -1,0 +1,49 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+//4250-940 Implementation, Chase Walton
+//Instructions: Take in a string (from a user or a file), compute the total number of occurrences of each character in the ASCII set. Print out the top three characters (with the most occurrences). Print out how many characters in the ASCII set you didn’t detect. Then print out the string in reverse order.
+
+
+//Definition of done: I completed and reviewed the code and can confirm I do not see any issues that could throw an error.
+//I have ran several test cases to verify it works as expected. Documented each line that could create some ambiguity with other developers.
+string? input = string.Empty;
+int asciiNotDetected = 255;
+string inputReversed = string.Empty;
+
+while (input == string.Empty) //Loop that validates the user has entered a string that is not null
+{
+    Console.WriteLine("Enter a String: ");
+    input = Console.ReadLine();
+}
+
+var charArray = Encoding.ASCII.GetBytes(input);		//Converts the string to an array of ASCII values
+IDictionary<byte, int> asciiOccurances = new Dictionary<byte, int>();	//Dictionary to hold the ASCII values as keys and the number of occurances as the values
+foreach (var item in charArray)
+{
+	asciiOccurances.TryGetValue(item, out int value);	//Check if the ASCII value is already in dictionary
+    if (value != 0)
+	{
+		asciiOccurances[item] = value+1;	//If the ASCII value is already there, increment the value
+	}
+	else
+	{
+		asciiOccurances.Add(item, 1);		//If the ASCII value is not there, add it
+	}
+}
+var sortedDict = from item in asciiOccurances orderby item.Value descending select item;	//Sort the dictionary by the number of occurances
+
+foreach (var item in sortedDict.Take(3))		//Take the first 3 values
+{
+	Console.WriteLine($"Character: {Convert.ToChar(item.Key)} ASCII Value: {item.Key}  Occurances: {item.Value}");	//Print out the three highest occurances
+}
+foreach (var item in sortedDict)
+{
+	asciiNotDetected = asciiNotDetected - 1;	//There are 255 ASCII characters, so 255 minus each one found gives us the number of characters not detected
+}
+Console.WriteLine($"Number of ASCII values not detected: {asciiNotDetected}");
+foreach (var item in input.ToCharArray())
+{
+	inputReversed = item + inputReversed;	//Convert the input string to a character array and reverse the characters to give us the reverse string
+}
+Console.WriteLine($"Input string reversed: {inputReversed}");
