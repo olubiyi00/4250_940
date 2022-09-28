@@ -1,0 +1,33 @@
+Solution: a game where the player shoots a missile at ships passing across the screen (like the one I showed you using raptor).
+The solution must support missiles launched by the user
+The solution must initiate a missile launch when the user clicks the right mouse button.
+The solution must initiate a missile launch when the user clicks the space bar.
+The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+The solution must remove the missile from being active if it goes off the screen.
+The solution must maintain the same constant speed for all missiles
+The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+
+The solution must detect when a missile “hits” a ship
+The solution must display an explosion at the point where a missile “hits” a ship
+The solution must remove the missile and ship after the missile “hits” the ship
+The solution must keep a count of all “hits”
+
+The solution must support ships launched by the solution
+The solution must initiate a ship launch when the system detects there are no active ships.
+The solution must support multiple types of ships based on a configurable value.
+The solution must display the appropriate image based on the type of ship when the ship is active
+The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+The solution must randomly choose a location to launch a ship from when initiated
+The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+The system must assign the speed of the ship based on the type of the ship being initiated
+The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+The solution must remove the ship from being active if it goes off the screen.
+
+The solution must end the game when the “hit” count has reached ten (10)
+The solution must end the game when the user clicks the left mouse button
+The solution must end the game when the user clicks the esc button
+The solution must end the game if the user has not initiated a missile launch in the last 5 minutes.

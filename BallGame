@@ -73,4 +73,14 @@ Liam Whitelaw:
     The ball must simulate physics in discrete timesteps of 60 ticks per second.
     The ball must not appear to clip through objects, subject to the above constraint.
     The program must use less than 5% of active CPU time on processors meeting minimum requirements TBD.
--
+
+=======
+Olubiyi OLuwatofunmi
+    The program must display a moving ball
+    The program must have a border around the side of the screen
+    The program should be able to able user draw obstacle with the mouse
+    The program should be able to detect the size of the object
+    The moving ball should bounce off the screen when if it hits the screen
+    The moving ball should change direction when it hits an obstacle larger than 3pixel
+    The moving ball should keep same direction if hits an obstacle smaller than 3pixel
+    

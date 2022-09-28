@@ -1,0 +1,8 @@
+•	Must use recursion.
+•	Must allow user to input numbers.
+•	Must verify correct data entry.
+•	Must have a two number input.
+•	Must output the result.
+•	The result output must be a single digit number.
+•	The user input numbers are allowed to be negative.
+•	The ending digit is allowed to be a negative.
