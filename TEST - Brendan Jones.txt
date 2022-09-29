@@ -1,0 +1,105 @@
+Tests for Battleship Game:
+
+Missile Behavior:
+	Press spacebar once:
+		Expected Behavior: one missile is launched.
+		Requirements Addressed:
+			Pressing spacebar should initiate missile launch
+	Press right mouse button once:
+		Expected Behavior: one missile is launched
+		Requirements Addressed:
+			Pressing right mouse button should initiate missile launch
+	Press spacebar and/or right mouse button 6 times in rapid succession
+		Expected Behavior: five missiles are launched.
+		Requirements Addressed:
+			Pressing spacebar should initiate missile launch
+			No more than five active missiles are allowed at once
+	Launch a missile, then wait for it to go off screen, then launch five more in rapid succession:
+		Expected Behavior: One missile should be launched, then become inactive after leaving the screen, then five more missiles should be launched
+		Requirements Addressed: 
+			Solution must remove a missile from being active when it goes off screen
+	Press each non-assigned button once:
+		Expected Behavior: nothing should happen
+		Requirements Addressed:
+			Right mouse button and spacebar should initiate missile launch
+	During all other Missile Behavior tests, observe missile speed, launch location, launch direction:
+		Expected Behavior: Missiles should appear from the center of the bottom of the screen, traveling straight upwards at a constant speed.
+		Requirements Addressed:
+			The solution must maintain the same constant speed for all missiles
+			The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+			The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+
+Ship Behavior:
+	Run Game at default configuration settings:
+		Expected Behavior:
+			A ship should be launched immediately if no ship is on the screen
+			Multiple types of ship should be present, with different images used for different ships
+			The ships should move at the rates assigned for their ship type
+			New ships should be launched at a random interval, unless the limit is reached
+			There should never be more than ten ships on screen at once
+			There should be a roughly equal number of ships launched accross each type
+			Ships should be launched at random from any row in the uper two thirds of the screen
+			Ships should be launched from the sides of the screen
+			Ships should be launched either from right to left or left to right
+			Ships should no longer be active once they leave the screen
+		Requirements Addressed
+			The solution must initiate a ship launch when the system detects there are no active ships.
+			The solution must support multiple types of ships based on a configurable value.
+			The solution must display the appropriate image based on the type of ship when the ship is active
+			The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+			The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+			The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+			The solution must randomly choose a location to launch a ship from when initiated
+			The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+			The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+			The system must assign the speed of the ship based on the type of the ship being initiated
+			The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+			The solution must remove the ship from being active if it goes off the screen.
+	Run Game at lowest configuration values:
+		Expected Behavior: 
+			Ship types should reflect configuration value
+			Ship launch rate should be low
+		Requirements Addressed:
+			The solution must support multiple types of ships based on a configurable value.
+			The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+	Run Game at highest configuration value:
+		Expected Behavior:
+			All ship types should appear
+			Ship launch should be rapid
+			Only 10 ships should appear on screen
+			Program should not close unexpectedly
+		Requirements Addressed: 
+			The solution must support multiple types of ships based on a configurable value.
+			The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+			The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+	
+Ship-Missile Collision Behavior:
+	Observe: Collision Counter:
+		Expected Behavior: A collision counter should be displayed on the screen.
+		Requirements Addressed: 
+			The solution must keep a count of all “hits”
+	Fire missiles at ships on the screen until one "hits" a ship:
+		Expected Behavior: When a missile collides with a ship, an explosion animation should be played briefly at the point of impact, then the missile, ship, and animation should disappear from the screen. The collision counter should then increase by one.
+		Requirements Addressed:
+			The solution must detect when a missile “hits” a ship
+			The solution must display an explosion at the point where a missile “hits” a ship
+			The solution must remove the missile and ship after the missile “hits” the ship
+			The solution must keep a count of all “hits”
+	
+Game End Behavior:
+	Press left mouse button:
+		Expected Behavior: game should close:
+		Requirements Addressed: 
+			The solution must end the game when the user clicks the left mouse button
+	Press the ESC key:
+		Expected Behavior: game should close
+		Requirements Addressed:
+			The solution must end the game when the user clicks the esc button
+	Play the game normally, until "hitting" 10 ships:
+		Expected Behavior: game should close
+		Requirements Addressed: 
+			The solution must end the game when the “hit” count has reached ten (10)
+	Leave the game open for five consecutive minutes with zero input:
+		Expected Behavior: game should close:
+		Requirements Addressed: 
+			The solution must end the game if the user has not initiated a missile launch in the last 5 minutes.
