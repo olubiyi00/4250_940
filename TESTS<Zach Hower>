@@ -1,0 +1,22 @@
+What test must be done to verify that the program does what it needs to fulfill requirements.
+Test: When the user hit spacebar or right mouse button, a missile launches.
+Test: When solution starts, no other key input is accepted except for set keybinds.
+Test: When user holds down a key, solution should reject input until key release.
+Test: When active missile count hits 5 user should be unable to launch missile.
+Test: After solution locks player from shooting missiles, it unlocks to allow missiles to fire again.
+Test: When missile goes off screen it should disappear.
+Test: Missile launches from bottom of screen.
+Test: Missile moves at constant speed in straight line.
+Test: Missile hits ship and hit dectection on ship triggers and makes a count.
+Test: When ship is hit, missile and ship is removed.
+Test: Solution place ships on screen in different configuration in the correct positioning.
+Test: Solution puts ship on board with correct attributes.
+Test: Solution limits amount of ships on screen to 10.
+Test: Solution puts down different ships, not the same one over and over.
+Test: Solution puts down ship that move in straight line horizontal where placed.
+Test: Solution ships state changes when hit detection is recognized.
+Test: Solution puts in another ship when one is sunk.
+Test: Solution removes ship when offscreen.
+Test. Solution end game when hit count is 10.
+Test: Solution accepts user input of left mouse button or esc button to end the game.
+Test: Solution ends after no input detected after 5 mins.
