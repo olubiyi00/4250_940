@@ -1,0 +1,16 @@
+Tests for Battleship Reqs
+
+1. Launch missile test - Fire a missle as the user by right clicking the mouse or using the space bar. Test result should show that a single missile is launced with a single click of the mouse or push of the button. Furthermore, Tester should rapidly click the right mouse button a total of 6. Test result should show that only 5 missiles can be active. The same should be tested pressing the space bar. Test should also show that the missiles are being launched from the center bottom of the screen and are moving vertically straight up. Confirm no other buttons launch missiles. Verify missiles move at a constant speed. 
+
+2. Active missile test - Test the number of active missiles after a missile has left the screen. Test result should show that number of active missiles is equal to the number shown on the screen (no more or less)
+
+3. Hit detection and count test - when a missile hits a ship, test result should show that hit has been detected, display an explosion at the point on the screen where the hit was detected, and hit counter should increase by one with each hit.
+
+4. Ship lauch test - Test should vefify that solution checks for active ships and launches a ship if no active ships are found. This test should be repeated multiple times to ensure that ships launched are randomly as well as random the launch location (restrictions - must come from left or right of screen and be initiated in a row located in the tow 2/3 of the screen - verify when launched from the right, ship moves left - when launched from the left, ship moves right)
+
+5. Ship speed & image test - When lauching ships, test should verify correct image and speed of ship - Test should vefify all ships move at the speed assigned to the ship type
+
+6. Active ship test - test should verify no more than 10 active ships on screen at a time and that ship is removed from active status once clear from the screen
+
+7. End game testing - Verify the game is ended when the hit count reaches 10. Verify the game is ended by the user left-clicking on the mouse or pressing escape. Verify that no other buttons end the game. Verify the game is ended when the user is idle for 5 minutes.
+
