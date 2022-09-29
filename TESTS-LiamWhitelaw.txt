@@ -1,0 +1,38 @@
+3. Test that when RMB down, a missile is produced.
+3a. Test that no other mouse button produces missiles.
+4. Test that when the spacebar is down, a missile is produced.
+4a. Test that no other key produces missiles.
+(3,4 implies 2)
+5. Test that no more than five missiles appear when the missile trigger is constantly held.
+6. Test that a missile reaching the screen border is removed.
+6a. Test that the above allows the user to fire more missiles.
+7. Test that the position delta of a missile from one tick to another is a constant vertical value.
+(7 implies 9)
+8. Test that the initial position of a missile is at the centre-bottom of the screen.
+11. Test that a missile triggers collision logic when it touches a ship
+12. Test that the collision logic displays an explosion at the touch point, removes the missile and ship, and accumulates the hit.
+12a. Test that doing so allows more missiles and ships to launch
+(12 implies 13,14)
+16. Test that ships are produced during gameplay.
+17. Test that launching is triggered when no ships exist.
+(17 implies 16)
+18. Test that the ships properly reflect changes in the configuration
+19. Test that the ship image is the same as what is expected for that type
+19a. Test that the ship image exists to begin with
+20. Test that the ship launching is sufficiently random
+20a. Test that the configuration defaults ship launch rate to 30%
+21. Test that the occurrence of all possible ship types is equally distributed over the long term
+22. Test that there are never more than ten ships tracked and on screen
+22a. Test that attempts to launch ships at this limit do not succeed
+23. Test that launch locations are sufficiently random
+24. Test that ship launches appear on both the left and right sides
+25. Test that ship launches only appear on the top two-thirds of the screen
+26. Test that the ship speed matches that expected for it's type
+26a. Test that all ship types actually have speeds defined
+27. Test that the ship's direction matches that of the side from which it was launched
+28. Test that a ship reaching the opposite screen border from where it was launched is removed.
+28a. Test that doing so allows another ship to launch
+30. Test that the game ends when the hit count is ten
+31. Test that the game ends when LMB is down
+32. Test that the game ends when <ESC> is down
+33. Test that the game ends when a five-minute timer expires after the user has not fired missiles
