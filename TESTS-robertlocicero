@@ -1,0 +1,126 @@
+Do you need working code in order to design tests in the Test Phase?
+  -Yes because Verification and Validation occur and there must be some working code to test to do so.
+  
+Identify all the verification acitivites that occur in the Requirments, Design and Implementation phases of the SE Lifecycle
+  Requirments: Requirments Analysis on completeness and correctness of customer reqs
+  Design: Design reviews and requirments traceability
+  Implementation: Code reviews and Unit testing
+  
+Identify all the validation acivities that occur in the Requirments, Design and Implemntation phases of the SE Lifecycle
+ Requirments: Note down all the reqs the user has and make sure they are written and explained in a way that you and the customer see eye to eye on
+ Design: explaingin the design to the user/system and seeing if they agree with it
+ Implementation: Acceptance testing, see if they write off on it
+ 
+ Tests
+The solution must support missiles launched by the user
+ - click right mouse button and missle should launch
+ - push space bar and missle should launch
+
+The solution must initiate a missile launch when the user clicks the right mouse button.
+  - click right mouse button and missle should launch
+  - click other buttons and missle should not aunch
+  
+The solution must initiate a missile launch when the user clicks the space bar.
+ -push space bar and missle should launch
+ -click other buttons and missle should not aunch
+
+The solution must limit the number of active missiles on the screen to no more than five (5) at any given time. (an “active missile” is any missile currently being displayed on the screen)
+  - rapidly spam space or right click and program should stop creating active missles
+  - create 5 missles on screen and wait for one of them to be leave so there are less than 5 missles and it should let you click again to add another missle
+  
+The solution must remove the missile from being active if it goes off the screen.
+  - test missle objects status after leaving the screen to see if it has either inactive status or was garbage collected
+
+The solution must maintain the same constant speed for all missiles
+  - launch multiple missles and see if they have all the same speed
+  - launch missles in a spam fashion and see if they have the same speed
+  - launch missles in a slower fashion and see if they have the same speed
+  
+The solution must launch missiles from the center of the bottom of the screen when a launch is initiated
+  - launch a missle with either right click or space and see that it comes from the bottom
+  - resize screen and launch missle to see if it still comes from the middle
+  - move mouse to different areas and see that missle still comes from the bottom of the screen
+  
+The solution must maintain the same constant direction for all missiles to be vertically straight up from the launched position.
+  - launch missle and see if it goes straight
+  - move mouse to all sides of the program and launch missle, see if missle still shoots vertically
+ 
+The solution must detect when a missile “hits” a ship
+  - launch a missle to hit a ship and see if it registers as a hit
+  - launch a missle to near miss a ship and it should register as a misss
+  - launch a missle to hit the very edge of a ship and it should register as a hit
+  - launch a missle really far a way and make sure it registers as a miss
+  
+The solution must display an explosion at the point where a missile “hits” a ship
+  -launch missle to hit ship and it should make an explosion
+  -launch a missle to near miss a shit and it should not make an explosion
+  
+The solution must remove the missile and ship after the missile “hits” the ship
+  -launch missle to hit ship and it should dissapear/be set inactive as it hits
+ 
+
+The solution must keep a count of all “hits”
+  -launch missle to hit ship and make sure counter increments
+  -launch missle to miss ship and make sure counter doesnt increment
+
+The solution must support ships launched by the solution
+  -test to make sure ships appear on screen
+  -test to make sure more than one ship appears
+  
+
+The solution must initiate a ship launch when the system detects there are no active ships.
+  -test to make sure system can tell when there are no active ships
+  -destroy all active ships and see if system initiates ship launch
+
+The solution must support multiple types of ships based on a configurable value.
+  -spawn ships with different configs and see if the ships change based on config
+  -spawn multiple ships and see if they are multiple types
+
+The solution must display the appropriate image based on the type of ship when the ship is active
+  -create a ship and test if ship properties match the picture
+  -create a ship and make sure its active
+
+The solution must randomly initiate a ship launch based on a configurable rate where the default is 30% of the time
+  -make sure ships are launched at the rate that is default and that it works at that rate
+  -test to make sure user can enter a rate and that it works
+  
+The solution must randomly choose from available ship types when a launch is initiated, giving all types equal chance of being launched.
+  - multiply launch the same amount of ships in a session and do math over multiple sets to see that ships all have an equal chance
+  
+The solution must limit the number of active ships on the screen to no more than ten (10) at any given time. (an “active ship ” is any ship currently being displayed on the screen)
+  - same tests as the 5 one
+  
+The solution must randomly choose a location to launch a ship from when initiated
+  -spam multiple ships and confirm they spawn in differnt places
+  
+The system must randomly choose to launch the ship from the left side of the screen or the right side of the screen
+  -click new ships around all sides of the screen with mouse and verify that some come from left and others from right
+
+The system must randomly choose a row in the top two-thirds of the screen to launch the ship from
+  -click new ships and make sure they spawn in the top two thirds of the screen
+  
+The system must assign the speed of the ship based on the type of the ship being initiated
+  -spawn a ship of each type and check its speed is moving that corresponds to that ship
+  -test to prove that the ship moves
+  
+The system must assign the direction of the ship based on which side of the screen it is being launched from (if from the left, direction goes left to right; if from the right, direction goes right to left)
+  -spawn ships from each direction and confirm they move the right way
+
+The solution must remove the ship from being active if it goes off the screen.
+  -spawn ships and ensure that they become inactive when leaving the screen
+  -spawn a ship already off screen and see it is flagged as inactive
+
+The solution must end the game when the “hit” count has reached ten (10)
+  -get 10 hits and game should end
+  -get one hit and stop trying see if game keeps running 
+  
+The solution must end the game when the user clicks the left mouse button
+  -click left mouse button and game should end
+  -click other buttons and game shouldnt end
+The solution must end the game when the user clicks the esc button
+ -press esc and game should end
+ -press other keyboard buttons and game shouldnt end
+The solution must end the game if the user has not initiated a missile launch in the last 5 minutes.
+  -launch one missle and wait 5 minitues game should end
+  -launch one missle and wait 4 mins 50 seconds then launch another and timer should reset then wait 5 minitues and see if game ends
+  
