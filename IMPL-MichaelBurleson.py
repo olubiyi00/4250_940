@@ -47,12 +47,14 @@ def addLeastSignificantDigitFloat(sum):
     if(getNumDigitsFloat(str(sum)) == 1):
         # We've found a single digit answer, let's return and display it to the user
         return sum
-    # Cast the new value as a string since we are mainly using string manipulation
-    # to parse the correct values from floats
     if(float(sum) > 0):
         digit = int(sum[-1])
     else:
+        # If we have a negative sum, we need to account for the fact that
+        # the last digit is negative
         digit = int(sum[-1]) * -1
+    # Cast the new value as a string since we are using string manipulation
+    # to parse the float value
     return addLeastSignificantDigitFloat(str(digit + int(sum[:-1].replace('.',''))))
 
 # Returns the number of decimal places in a number passed in as a string
