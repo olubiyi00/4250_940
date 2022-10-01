@@ -1,4 +1,12 @@
-﻿using System;
+WCK- Overall, very good job. The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
+by doing a design, to define test cases and test data, etc. You did most of that. AND you caught the test case I normally trip people up with (see bottom of file)
+
+    Do you count spaces as a character? If I pass your document into itself when running, would it process "WCK-" or the whole thing or just up to the carriage return?
+    Is counting spaces included in the requirements? That is to say, what do I mean when I say "a string".
+        
+  feedback inlined below prefixed by WCK-
+    
+using System;
 
 namespace ClassExample.Controllers
 {
@@ -44,7 +52,7 @@ namespace ClassExample.Controllers
                 // Creating a new ArrayList of String of the input above where every character is a value
                 // in the array list.
 
-                List<String> inputList = new List<String>(Arrays.asList(input.split(",")));
+                List<String> inputList = new List<String>(Arrays.asList(input.split(",")));         WCK- string.split. clever
             }
             catch (Exception e1)
             {
@@ -52,7 +60,10 @@ namespace ClassExample.Controllers
                 throw;
             }
 
-            /// <summary>
+            /// <summary>                                       WCK- could you sort the array inputList first and use that? 
+                                                                    But I do like your logic here. It has some elegance and shows good understanding of String.
+                                                                   it just might be more brute force than necessary; computational cost is not relevant for this
+                                                                   problem but if this approach was used in a large loop it would add up.
             /// This block cycles through every character in the string and counts occurences to display.
             /// The purpose is to count every character in the List
             /// </summary>
@@ -83,7 +94,10 @@ namespace ClassExample.Controllers
         /// will then be displayed
         /// </summary>
 
-        // I am not sure how to complete the coding section of this part.
+        // I am not sure how to complete the coding section of this part.           WCK- you could do the following
+                                                                                      remove duplicates from inputList, sort it
+                                                                                          iterate through the ascii char set (0-255)
+                                                                                          keep count of how many chars do not appear in the inputList
 
         /// <summary>
         /// This block of code prints a reverse order of the inputed string ArrayList called inputList
