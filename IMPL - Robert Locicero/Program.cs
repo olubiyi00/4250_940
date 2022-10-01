@@ -1,4 +1,13 @@
-﻿/*
+﻿WCK- The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
+by doing a design, to define test cases and test data, etc.
+     I'm not seeing the artifacts for these. Did you test it?
+     
+     Nice comments, nice variable naming, good use of white space. but you forgot the last two items in the problem statement.
+     
+     more feedback inlined below prefixed with WCK-
+     
+     
+     /*
  * Implementation Project - Robert LoCicero
  * Software Engineering 1
  * 
@@ -38,6 +47,7 @@ namespace impl
             {
                 DetectOccurences(GetStringInput());
             }
+            WCK- what about a count on how many chars not detected? and reversing the string
         }
 
         /// <summary>
@@ -87,7 +97,9 @@ namespace impl
                 Console.WriteLine("Enter the name of the input file in the project directory: ");
                 fileName = Console.ReadLine();
 
-                if (!File.Exists(fileName) || fileName == null || fileName.Length == 0)
+                if (!File.Exists(fileName) || fileName == null || fileName.Length == 0)   WCK- I would change the order; check null, check empty, check exists
+                                                                                               on the other hand. do you need to check null or empty; File.Exists 
+                                                                                                    does already doesn't it?
                 {
                     isValidFile = false;
                     Console.Write("File does not exist in project directory.");
@@ -100,7 +112,7 @@ namespace impl
 
             } while(!isValidFile);
 
-            List<string> lines = File.ReadAllLines(fileName).ToList();
+            List<string> lines = File.ReadAllLines(fileName).ToList();         WCK- ah,you include carriage returns in the input. cool. most people didn't
             return lines.ToString();
         }
 
@@ -150,7 +162,8 @@ namespace impl
             }
 
             
-            var topThreeOccurences = charDict.OrderByDescending(x => x.Value).Take(3).ToList();
+            var topThreeOccurences = charDict.OrderByDescending(x => x.Value).Take(3).ToList();        WCK- what if there's a tie; 5 4 3 3 3 3 2 (6 chars meet criteria)
+                
 
             Console.WriteLine("Top 3 Occurences");
             foreach(KeyValuePair<char, int> keyValuePair in topThreeOccurences)
