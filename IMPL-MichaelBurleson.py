@@ -1,10 +1,19 @@
+WCK- The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
+by doing a design, to define test cases and test data, etc. You did most of that. I don't see the test data but it's implied. Should be included so 
+I can see if you covered happy path, edge cases, error cases, etc.
+Your use of recursion is twisting my brain. I'm getting the feeling it always returns 0.
+Plus your line where you say "answer = num1 + num2 + addLeast..." ; I don't see how this will ever give you a single digit.
+
+Good comments though.
+
+
 # Using Recursion; take two numbers in from the user (a human) and add them together 
 # then separate the least significant digit and add it the remaining digits and so on 
 # until you have a single digit answer.
 
 # Tests: non-integer inputs, negative integer inputs, non-single digit answer
 
-# Done: Calculates single digit answer given 2 user inputs and gracefully ends execution.
+# Done: Calculates single digit answer given 2 user inputs and gracefully ends execution.          WCK- I like this; could include "tests pass" &"design updated"
 #       Notifies the user if any error occurs or if a single digit answer is not calculated.
 #       Gracefully ends execution if an error occurs.
 
@@ -12,7 +21,7 @@ from math import floor, log10
 import sys
 
 # Returns the least significant digit until no digits are left for num1 and num2.
-def addLeastSignificantDigit(num1, num2):
+def addLeastSignificantDigit(num1, num2):                              WCK- interesting use of recursion. took me a minute
     while(num1 > 0):
         # Return least significant digit of num1 (num1 % 10) and recursively call to add next digit of num1.
         return num1 % 10 + addLeastSignificantDigit(floor(num1/10), num2)
