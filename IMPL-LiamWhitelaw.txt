@@ -1,5 +1,5 @@
 WCK- Overall, excellent job. The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
-by doing a design, to define test cases and test data, etc. You did all that. AND you caught the test case I normally trip people up with (see bottom of file)
+by doing a design, to define test cases and test data, etc. You did all that. 
 I'll show in class a slightly more elegant solution.
 Feeback below (not much because this is really good) prefixed by WCK-
 
