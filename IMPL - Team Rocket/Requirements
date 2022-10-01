@@ -6,3 +6,4 @@
 •	The result output must be a single digit number.
 •	The user input numbers are allowed to be negative.
 •	The ending digit is allowed to be a negative.
+WCK- must add the two numbers together, THEN pull off the lsb and add to remaining digits until there's only one digit left. (missing some key requirements)
