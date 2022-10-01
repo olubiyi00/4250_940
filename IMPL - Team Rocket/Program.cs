@@ -1,3 +1,12 @@
+WCK- The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
+by doing a design, to define test cases and test data, etc.
+You did all these! GREAT!
+    I've already look at the other files before I opened this one. THere is feedback in each.
+    
+    Good comments. I followed everything pretty easily even though I don't know C#
+    
+    additional feedback inlined below prefixed with WCK-
+    
 using System;
 using System.Diagnostics;
 using System.Numerics;
@@ -30,23 +39,25 @@ namespace Project1
          */
         public static void Main(string[] args)
         {
-            string twoNums = Console.ReadLine(); // get both inputted numbers
-            if (twoNums == null) {
+            string twoNums = Console.ReadLine(); // get both inputted numbers   WCK- no prompt to the user as what to enter?
+            if (twoNums == null) {               WCK- I don't know C# but twoNums couldn't be null the way it is declared above. I thought you had to expliciting
+                                                      tell C# it can be nullable. WIth a preceding ?String twoNums =...          
                 Console.WriteLine("Unknown input!");
-                return;
+                return;        WCK- multiple returns from the same method is discouraged ; makes it less maintainable
             }
 
-            string[] nums = twoNums.Split(' ');
+            string[] nums = twoNums.Split(' ');   WCK- what if there is a preceding space or trailing. Shouldn't you trimwhitespace first?
+                                                     WCK- what if there are three or more numbers? nums will have all of them. you ignore the rest???
             if (nums.Length < 2) {
                 Console.WriteLine("Not enough numbers inputted!");
                 return;
             }
             // get parsed versions of both inputted numbers
-            int firstNum = Int32.Parse(nums[0]);
+            int firstNum = Int32.Parse(nums[0]);                      WCK- what happens here if they aren't numeric? what if they are floats?
             int secondNum = Int32.Parse(nums[1]);
 
             // add both and input to recursive method
-            int added = firstNum + secondNum;
+            int added = firstNum + secondNum;         WCK- what happens if the sum is > maxInt or <minInt
             Console.WriteLine("Added together: " + added);
             int result = GetLastDigitAddedWithRestOfNum(added);
 
@@ -62,7 +73,8 @@ namespace Project1
             // This is the inputted number with the last digit removed. Reduce it by a factor of 10 and remove the last number.
             // Example
             // 953 ---> (953 - 3) / 10 ---> 95
-            num = (num - lastDigit) / 10;
+            num = (num - lastDigit) / 10;     WCK- this works but no need to subtract lastDigit as the division will drop the remainder on the floor
+                                                   
             //Console.WriteLine(num); // debug
 
             // Clarification was made that the last digit matches the sign of the rest of the number
