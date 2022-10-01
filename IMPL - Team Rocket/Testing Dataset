@@ -20,5 +20,7 @@
 WCK- would be good to include the expected out for each case. otherwise how do you know if it working properly?
 edge cases? IntMax,0 is valid but IntMax,1 is not; intMin,0 is valid but intMin,-1 is not; 
 do you want a case with a positive and a negative number where the sum is negative; is positive; is zero
+Do you handle floats?
+
 You have several good cases up there, so good job.
 
