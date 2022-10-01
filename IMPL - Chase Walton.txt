@@ -1,4 +1,11 @@
-﻿using System.Collections.Generic;
+WCK- Overall, very good job. The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
+by doing a design, to define test cases and test data, etc. You did all that, although I would have like it if you included your test data here or at 
+least outlined your test cases. 
+I liked your use of dictionary.
+Really good comments and very descriptive variable naming.
+
+
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 //4250-940 Implementation, Chase Walton
@@ -33,13 +40,14 @@ foreach (var item in charArray)
 }
 var sortedDict = from item in asciiOccurances orderby item.Value descending select item;	//Sort the dictionary by the number of occurances
 
-foreach (var item in sortedDict.Take(3))		//Take the first 3 values
+foreach (var item in sortedDict.Take(3))		//Take the first 3 values               WCK- what if there is a tie for 3rd place? count - 5 4 3 3 3 3
 {
 	Console.WriteLine($"Character: {Convert.ToChar(item.Key)} ASCII Value: {item.Key}  Occurances: {item.Value}");	//Print out the three highest occurances
 }
 foreach (var item in sortedDict)
 {
 	asciiNotDetected = asciiNotDetected - 1;	//There are 255 ASCII characters, so 255 minus each one found gives us the number of characters not detected
+	                                                    WCK- why not just subtract the size of sortedDict???
 }
 Console.WriteLine($"Number of ASCII values not detected: {asciiNotDetected}");
 foreach (var item in input.ToCharArray())
