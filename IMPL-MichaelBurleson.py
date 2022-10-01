@@ -1,64 +1,147 @@
-WCK- The point of the exercise was to think the problem out before coding it. To take time to understand the requirements 
-by doing a design, to define test cases and test data, etc. You did most of that. I don't see the test data but it's implied. Should be included so 
-I can see if you covered happy path, edge cases, error cases, etc.
-Your use of recursion is twisting my brain. I'm getting the feeling it always returns 0.
-Plus your line where you say "answer = num1 + num2 + addLeast..." ; I don't see how this will ever give you a single digit.
-
-Good comments though.
-
-
 # Using Recursion; take two numbers in from the user (a human) and add them together 
 # then separate the least significant digit and add it the remaining digits and so on 
 # until you have a single digit answer.
-
-# Tests: non-integer inputs, negative integer inputs, non-single digit answer
-
-# Done: Calculates single digit answer given 2 user inputs and gracefully ends execution.          WCK- I like this; could include "tests pass" &"design updated"
+#
+# Must accept two numbers as user input
+# Must use recursion to reach single digit answer
+#
+# Tests
+# Non-integer/float inputs (Unhappy paths)
+# num1 = foo, num2 = 10             Result: Error message displayed after num1 is entered
+# num1 = 10, num2 = foo             Result: Error message displayed after num2 is entered
+# num1 = "", num2 = 10              Result: Error message displayed after num1 is entered
+# num1 = 10, num2 = ""              Result: Error message displayed after num2 is entered
+# Negative inputs
+# num1 = -123, num2 = -456          Expected: -3         Result: -3
+# num1 = -123, num2 = 456           Expected: 9          Result: 9
+# num1 = 0, num2 = -39              Expected: -3         Result: -3 
+# Zero as sum
+# num1 = 0, num2 = 0                Expected: 0          Result: 0
+# Float inputs
+# num1 = 1.23, num2 = 4.56          Expected: 3          Result: 3
+# num1 = 1.3999, num2 = 3.1         Expected: 8          Result: 8
+# Integer inputs
+# num1 = 123, num2 = 456            Expected: 3          Result: 3
+# Mixed inputs
+# num1 = 1.23, num2 = 456           Expected: 3          Result: 3
+# num1 = 123, num2 = 4.56           Expected: 3          Result: 3
+# num1 = -1.23, num2 = 456          Expected: 9          Result: 9
+# num1 = -123, 4.56                 Expected: 9          Result: 9
+#
+# Done: Calculates single digit answer given 2 numbers and gracefully ends execution.
 #       Notifies the user if any error occurs or if a single digit answer is not calculated.
 #       Gracefully ends execution if an error occurs.
 
 from math import floor, log10
 import sys
 
-# Returns the least significant digit until no digits are left for num1 and num2.
-def addLeastSignificantDigit(num1, num2):                              WCK- interesting use of recursion. took me a minute
-    while(num1 > 0):
-        # Return least significant digit of num1 (num1 % 10) and recursively call to add next digit of num1.
-        return num1 % 10 + addLeastSignificantDigit(floor(num1/10), num2)
-    while(num2 > 0):
-        # Return least significant digit of num2 (num2 % 10) and recursively call to add next digit of num2.
-        return num2 % 10 + addLeastSignificantDigit(num1, floor(num2/10))
-    return 0
+# Recursively calls until a single digit number is found given an integer sum
+def addLeastSignificantDigitInt(sum):
+    if(getNumDigitsInt(sum) == 1):
+        return sum
+    return addLeastSignificantDigitInt((sum%10)+(floor(sum/10)))
 
-# Returns the number of digits in num
-def getNumDigits(num):
+# Recursively calls until a single digit number is found given a float sum
+# which is passed in as a string to be correctly parsed
+def addLeastSignificantDigitFloat(sum):
+    if(getNumDigitsFloat(str(sum)) == 1):
+        # We've found a single digit answer, let's return and display it to the user
+        return sum
+    if(float(sum) > 0):
+        digit = int(sum[-1])
+    else:
+        # If we have a negative sum, we need to account for the fact that
+        # the last digit is negative
+        digit = int(sum[-1]) * -1
+    # Cast the new value as a string since we are using string manipulation
+    # to parse the float value
+    return addLeastSignificantDigitFloat(str(digit + int(sum[:-1].replace('.',''))))
+
+# Returns the number of decimal places in a number passed in as a string
+# to be correctly parsed
+def getNumDecimalPlaces(num):
+    return len(num.split('.')[1])
+
+# Returns the number of digits in an integer
+def getNumDigitsInt(num):
     try:
+        if(num == 0):
+            return 1
         if(num < 0):
-            # Get number of "digits" of negative number by making it positive
+            # Make negative number positive for log10 bounds
             num = num * -1
         return floor(log10(num) + 1)
     except ValueError:
         # Bad value for num passed = 0 digits
         return 0
 
-# Try statement to ensure proper user input before performing calculations.
-try:
-    # Accept input (2 integers) from the user.
-    num1 = int(input('Enter integer 1: '))
-    num2 = int(input('Enter integer 2: '))
-    # 1. Add the 2 numbers given.
-    # 2. Call addLeastSignificantDigit to add each digit of num1 and num2 to the sum from step 1.
-    answer = num1 + num2 + addLeastSignificantDigit(num1, num2)
-    if(getNumDigits(answer) != 1):
-        # Non-single digit final answer. Notify the user and exit.
-        print('Final answer is not a single digit. Please try again with different inputs.')
+# Returns the number of digits in a float passed in as a string to be
+# correctly parsed
+def getNumDigitsFloat(num):
+    try:
+        # We need to account for the fact that negative symbol could be included
+        # since the method used to get the number of digits is counting characters
+        return len(num) if '-' not in num else len(num)-1
+    except ValueError:
+        # Bad value for num passed = 0 digits
+        return 0
+
+# Main execution below
+
+# Accept input from the user
+num1 = input('Enter number 1: ')
+if '.' in num1:
+    # If we have a decimal in an input, user may have given a float, try to parse it
+    try:
+        num1 = float(num1)
+        decimalsInNumOne = getNumDecimalPlaces(str(num1))
+    except ValueError:
+        # String was passed instead of a float. Notify the user and exit
+        print('Program only accepts number inputs. Please try again.')
         sys.exit()
-    else:
-        # Single digit final answer. Print the answer and exit.
-        print(f'Final answer is {answer}.')
+else:
+    # No float passed, let's see if the user entered an integer instead
+    try:
+        num1 = int(num1)
+        decimalsInNumOne = 0
+    except ValueError:
+        # String was passed instead of an integer. Notify the user and exit
+        print('Program only accepts number inputs. Please try again.')
         sys.exit()
-except ValueError:
-    # If we enter here, user entered a string or float in place of integers num1 or num2.
-    # Notify the user and exit.
-    print('Program only accepts integer inputs. Please try again.')
-    sys.exit()
+
+num2 = input('Enter number 2: ')
+if '.' in num2:
+    # If we have a decimal in an input, user may have given a float, try to parse it
+    try:
+        num2 = float(num2)
+        decimalsInNumTwo = getNumDecimalPlaces(str(num2))
+    except ValueError:
+        # String was passed instead of a float. Notify the user and exit
+        print('Program only accepts number inputs. Please try again.')
+        sys.exit()
+else:
+    # No float passed, let's see if the user entered an integer instead
+    try:
+        num2 = int(num2)
+        decimalsInNumTwo = 0
+    except ValueError:
+        # String was passed instead of an integer. Notify the user and exit
+        print('Program only accepts number inputs. Please try again.')
+        sys.exit()
+
+
+if(decimalsInNumOne > decimalsInNumTwo):
+    roundNumber = decimalsInNumOne
+else:
+    roundNumber = decimalsInNumTwo
+# Calculate the sum and round to whichever has the larger amount
+# of digits after the decimal, if a float is given by the user
+sum = round(num1 + num2, roundNumber)
+# Call the recursive function depending on whether or not the calculated sum
+# is an integer or float and print the answer
+if(type(sum) == float):
+    print(f'The calculated single digit answer is: {int(addLeastSignificantDigitFloat(str(sum)))}')
+else:
+    print(f'The calculated single digit answer is: {addLeastSignificantDigitInt(sum)}')
+# End execution
+sys.exit()
