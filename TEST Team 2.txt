@@ -1,4 +1,14 @@
 Team 2 - Elliott Kaferle, Oluwatofunmi Olubiyi, Raekwon Adams-Rodgers
+WCK - good traceability
+need some more error checking of what could go wrong with configuration files; e.g. what if you set frequency rate to 0% (in conflict with requirements where
+a ship must be launched if no ships on the screen; how does the app handle it; how should it handle it)
+For #25 (req #22) you could set the config rate at 100% to force maximum number of ships and verify it is 10
+I think something is missing in line 33
+I like the last one.
+Overall, good job
+
+
+
 Do missiles have collison with themselves?
 1-3. Press right click and space bar and make sure they launch a missile.
 4. Make sure no other key other than right click and space launch a missile.
