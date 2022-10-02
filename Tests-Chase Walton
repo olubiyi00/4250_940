@@ -1,3 +1,14 @@
+WCK- Test cases should be in the form of test steps to be executed followed by an expected result.
+Yours are questions that are mostly restatements of the requirements? They are mostly correct but just need to
+be phrased differently. For example...
+You say "Can the user launch missiles with only the right mouse button and space bar?";
+Instead, you should have something like...
+Click the right mouse button, verify one and only one missile is launched from the middle of the screen.
+Click and hold the right mouse button, verify no missile is launched until you release the button.
+Press the space bar, verify one and only one missile is launched from the middle of the screen.
+etc. (all of the above would replace the one you wrote)
+
+
 1.	Can the user launch missiles with only the right mouse button and space bar?
 2.	Does the program prevent launching more than 5 active missiles at a time?
   a.	Do the missiles go inactive after leaving the screen?
