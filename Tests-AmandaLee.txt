@@ -1,3 +1,16 @@
+WCK- Overall the test cases are very good. 
+You need to have traceability back to the requirements to ensure all requirements are covered.
+In general, your format is good. You have test steps followed by expected results.
+You need some error handling tests. Since you have configuration requirements, you can define
+tests based on values entered there. E.g. set rate to 0%; at most 1 ship should appear because
+there is a requirement to create a ship if no ships are on the screen. set the rate to 100%; 
+at most 10 ships should appear because of the requirement for maximum number of active ships
+(in fact, the 10 will be in clusters). Set the type of ship to 1, and define an image, verify 
+that image is display, then change the image in the config file, rerun and verify the 
+correct image is displayed. etc.
+
+
+
 Tests for Battleship Reqs
 
 1. Launch missile test - Fire a missle as the user by right clicking the mouse or using the space bar. Test result should show that a single missile is launced with a single click of the mouse or push of the button. Furthermore, Tester should rapidly click the right mouse button a total of 6. Test result should show that only 5 missiles can be active. The same should be tested pressing the space bar. Test should also show that the missiles are being launched from the center bottom of the screen and are moving vertically straight up. Confirm no other buttons launch missiles. Verify missiles move at a constant speed. 
