@@ -1,16 +1,31 @@
+WCK- overall, really good test cases. Traceability to requirements.
+additional feedback inlined below prefixed with WCK-
+
+
 Do you need working code in order to design tests in the Test Phase?
   -Yes because Verification and Validation occur and there must be some working code to test to do so.
-  
+
+WCK- the answer is NO. You just proved it. You wrote test cases without any working code. 
+The key word is "to design tests". To execute them, yes.
+
+
 Identify all the verification acitivites that occur in the Requirments, Design and Implementation phases of the SE Lifecycle
   Requirments: Requirments Analysis on completeness and correctness of customer reqs
   Design: Design reviews and requirments traceability
   Implementation: Code reviews and Unit testing
-  
+
+WCK - The above is correct
+
 Identify all the validation acivities that occur in the Requirments, Design and Implemntation phases of the SE Lifecycle
  Requirments: Note down all the reqs the user has and make sure they are written and explained in a way that you and the customer see eye to eye on
  Design: explaingin the design to the user/system and seeing if they agree with it
  Implementation: Acceptance testing, see if they write off on it
- 
+
+WCK - most customers do not want to learn about software design. The only part of design they would 
+be interested in is if you have some screen mockups (something visual or tangible). They couldn't 
+care less about interaction diagrams, data models, class heirarchies, etc.
+
+
  Tests
 The solution must support missiles launched by the user
  - click right mouse button and missle should launch
