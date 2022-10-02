@@ -1,3 +1,11 @@
+WCK- need to trace or map the tests back to requirements to ensure all requirements are addressed.
+You have the other key components of a test case which are a set of steps to execute and the expected result 
+or outcome.
+You need some error condition checking. These all seem like happy path tests.
+If I enter invalid data in the config file, what happens (as an example).
+If I resize the screen in the middle of playing the game, what happens; what should happen.
+etc.
+
 What test must be done to verify that the program does what it needs to fulfill requirements.
 Test: When the user hit spacebar or right mouse button, a missile launches.
 Test: When solution starts, no other key input is accepted except for set keybinds.
