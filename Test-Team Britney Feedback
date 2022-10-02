@@ -1,0 +1,39 @@
+Test team Britney
+
+Overall, good job.
+Need to have traceability back to which requirements you are testing for. (is that what the numbers are in front of the names?? I initially thought it was the number of the test).
+Could use more error testing;
+What happens if the screen is resized in the middle of the game (do missiles still shoot from the new middle; did the ships dissapear or not make it to the new end of the screen)
+Changing config values to boundaries (0%, 100%) or beyond or to invalid entries
+
+1-9 
+you have key elements of a test case; steps to run and expected results. Good.
+
+I like the one about holding the space bar down 
+I like the one after that; space bar and right click at the same time. Unique. I haven't seen that one yet.
+
+11-14 
+"in the same box"?? 
+Can a missile hit more than one ship? What if the ships are overlapped on the screen at the time of impact?
+
+16-20 and 21-24
+Need to state these in the form of steps to execute followed by an expected outcome.
+For example: Change the configuration rate to 100% and verify that a maximum of 10 Ships appear on the screen. 
+CHange the configuration rate to 0% and verify at most one ship appears (because of the requirement that a ship
+is launched whenever there are no ships on the screen).
+etc.
+
+25-28
+How can someone do the first bullet?
+for the second, is the speed based on size? 
+You could change the config values to have only one kind of ship, set the image, verify it displays, 
+then change the image and verify the new one displays
+Don't just restate the requirement, think of steps to take to verify the requirement
+
+What happened to number 29???
+
+30-33
+These seem ok. 
+What if the user holds down the left mouse and then moves the cursor off the screen. Should the game end?
+
+
