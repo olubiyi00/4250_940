@@ -1,3 +1,7 @@
+WCK- overall, good job. Some comments below prefixed with WCK-
+Some of the later tests can only be done if you change the code. For test phase testing, you can't change the code unless you are doing white box testing and then you aren't allowed to change the code you are testing, only the surrounding code to force the logic a certain way. For most of the later ones, there are ways to test these by manipulating the configuration values; e.g. set launch rate to 0% so that no ships are spawned; is the "a ship must be launched if none on the screen" requirement still met?... set the rate to 100% and you should see a maximum of 10 ships on the screen (probably all clustered together).
+
+
 Test - Requirement(s) being tested #
 
 Click right mouse button to make sure missile launches (1,2)
@@ -11,9 +15,18 @@ Fire a missile at a ship and make sure an explosion graphic is displayed if a co
 Fire a missile and make sure both the missile and ship are removed if a collision between the two occurs (11)
 Print the hit counter every time a hit occurs to make sure it is incrementing correctly (12)
 Review the ships that are supported and make sure each ship and ship type follows the proper configurable values and design requirements for ships (13,15)
+
+WCK _-- the above one is one I wanted to see, I think, but you could spell it out more; set configuration rate to 0 %; no ships appear; set rate to 100% and a max of 10 ships appear close together, etc.
+
 Force no ships being on the screen to make sure a ship launch is initiated (14)
 Force each type of ship to be active to make sure the appropriate image is displayed (16)
+
+WCK- actually the best way to do the above requirement is to set a single type of ship with one image, observe the result, then change the image in the config file and rerun, the image should change.
+
 Start a game and print the random ship launch rate to make sure 30% is the default value (17)
+
+WCK- sounds like a white box test. you are going to modify the code as part of the test???
+
 Modify the random ship launch rate and start a game and print it to make sure the value is updated properly (17)
 Force a ship launch to occur many times to check that all ship types have an equal chance of being launched (18)
 Place 10 ships on the screen and attempt to place an eleventh to make sure a limit of 10 active ships is in place (19)
