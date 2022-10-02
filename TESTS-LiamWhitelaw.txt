@@ -1,3 +1,8 @@
+WCK- these are very good but pretty much cover the happy path only.
+For example, with configuration files; you could enter 0% launch rate and then 100% launch rate and then enter an invalid number; the 100% rate makes it easier to verify a max of 10 ships.
+you could set only 1 kind of ship with one image, after obvering the image on the screen. change the image in the config file and rerun, should observer the new image now.etc.
+
+
 3. Test that when RMB down, a missile is produced.
 3a. Test that no other mouse button produces missiles.
 4. Test that when the spacebar is down, a missile is produced.
