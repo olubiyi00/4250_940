@@ -1,3 +1,9 @@
+WCK - need a traceability back to the requirement for each test. To ensure all requirements are covered.
+The test cases should be in the form of a series of steps to be execute followed by the expected result.
+You are close. But these are too general and are closer to a paraphrase of the requirement.
+See Brandon Jones' test cases submission.
+
+
 1. Test to see if you can launch a missile, and make sure it is done with the right click and spacebar only.
 2. Test to see if you can have five missiles out at a time, and that they are dissapearing correctly (On hit, when you fire a sixth missile, or when they fly off screen)
 3. Test to see if the missile launch is correct (Consistent speed, launch from the correct place, maintain direction)

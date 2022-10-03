@@ -1,4 +1,10 @@
-Tests for Battleship Game:
+Tests for Battleship Game:          WCK- I like this format
+WCK - these are all really good. I would add some error conditions. These are all happy path type tests (you have one "system shouldn't crash").
+      what if there is no config file, what if it is corrupted, what if it is protected and can't be read, what if config values are too large,
+      what if ship images are not sized properly, 
+      what if the screen is resized, do missile still launch from the middle of the new screen size or the old one
+      what you hold down the right mouse button and then drag it off the screen. (does missile launch on depression or release of mouse button)
+      etc.
 
 Missile Behavior:
 	Press spacebar once:
@@ -22,7 +28,7 @@ Missile Behavior:
 		Expected Behavior: nothing should happen
 		Requirements Addressed:
 			Right mouse button and spacebar should initiate missile launch
-	During all other Missile Behavior tests, observe missile speed, launch location, launch direction:
+	During all other Missile Behavior tests, observe missile speed, launch location, launch direction:            WCK- good idea
 		Expected Behavior: Missiles should appear from the center of the bottom of the screen, traveling straight upwards at a constant speed.
 		Requirements Addressed:
 			The solution must maintain the same constant speed for all missiles
