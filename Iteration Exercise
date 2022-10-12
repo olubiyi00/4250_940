@@ -1,0 +1,23 @@
+Group of Six: Zach Hower, John Milhorn, Chase Walton, Brendan Jones, Oluwatofunmi Olubiyi, Elliot Kaferle
+
+First Iteration - Basic Prototype
+	1. Server Logic, All of it should be done since everything builds off this. Make game, but we need admin, which needs the server. 
+	2. Admin privileges to the server, send text or emails to players, add new task, and create hunt. Need a controller to start and create games and invite users to a new hunt.
+	3. Data model, contains the information that needed for creating a game, and the holds the data for players, hunts, and task list. Necessary for running a hunt.
+	4. Part of User interface, Ability to manually enter code to enter hunt, and the server gives a response based on it being the correct code or not. List of tasks. 
+
+Second Iteration - User experience enhancement 
+	1. graphical map, players can edit display names, having a trackable list of tasks that can be completed by user.
+	2. Integration of QR code scanning, from within the client interface which will complete a task.
+	3. Ability for Admin to add in task of multiple types such as GPS based, QR code image, or User input.    
+	4. Refreshing the interface with real-time data from the server.
+
+Third iteration - Quality of Life
+	1. Teams, able to team up with other people so we can participate in the hunt as a group,
+		one person can use the same access code at the same time on different devices in order to “play as a team”.
+		screens to be refreshed so they can see progress other team members have made.	
+	2. status of player submission plus timestamp, rank list of players in the Hunt via email. 	 
+	3. Implement feedback from first iteration.
+  
+	Iteration timeframe: 3 weeks, Relatively small scale project. Team size would affect the time scale, more people it would be less time.
+	
