@@ -1,0 +1,110 @@
+Player
+
+Admin
+
+Player Interface
+
+Server
+
+Data Set
+
+1. Player Interface - the interface is tangible and the user can provide
+feedback on the interface after the first iteration
+	Map
+	QR code
+	Task List
+		Indicate task is complete
+	Show Player Progress
+	Show Error Messages
+	Show Congratulations Message
+	
+
+2. Server - after getting the interface, the server will provide something
+to talk back to that interface
+	Send Email
+	Keep track of Player Progress
+	History of tasks
+	Send text message
+	Update user interface
+
+
+3. Data Set - without the data set, there is no player because it has no
+player data. the same can be said of the admin.
+	Error Messages
+	Congratulations Message
+	Additional information of each player
+		Email
+		Username
+		Phone Number
+		ENumber
+		History
+		Access code
+		Player Location
+		Hunt Location
+		Player status of submission
+
+
+4. Player - the player is more time consuming than the admin and needs to
+be finished before the admin because without the player, the admin does not
+have the full functionality
+	Join team
+	Join hunt
+	See a leaderboard
+	Compare Location with hunt locations
+	Check status of submission
+	
+
+5. Admin - the admin is able to change the attributes of the system, so the
+system must be put in place before the admin can function
+
+Iteration 1:
+
+Add a basic map that shows the location around the hunt. Add a generic task
+list and player progress. Create just a general layout of the website to
+receive feedback from the users on how they want the website to look and
+feel.
+
+For iteration 1 we want to create something tangible for the user to look
+at. This will allow us to receive feedback so that we can begin iteration
+2 during this phase of feedback.
+
+
+Iteration 2:
+
+
+Allow the server to begin interacting with the interface. Send data to the 
+server when a user reaches the next task and update the interface to show
+that the server received the data. Store data on the users. Send email and
+text message
+
+For iteration 2 we want to start building the system so that it starts to 
+become functional. This way the user will note that the product is really
+on track to becoming a fully functioning product. Furthermore, we can 
+receive feedback from the user so that we can start iteration 3.
+
+
+We chose this path of iterations because it is built on user input. Everytime
+we finish one iteration, the user will be able to see a tangible difference
+and will be able to judge our progress at any given time.
+
+
+We have divided the amount of work pretty evenly among the iterations, so
+no iteration has too much work in it. This is tailored towards a smaller
+team with a quicker deadline between iterations. If the iteration deadlines
+were longer or the team was larger, the iterations we have would more than
+likely be merged into more ambitious iterations. This would allow the project
+to be worked on in subsections led by different parts of the team. They would
+have longer to work on these subsections and consequently be able to complete
+more of the iterations at once.
+
+
+
+
+
+
+
+
+
+
+
+
