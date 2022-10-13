@@ -1,0 +1,69 @@
+BucHunt Iteration Group 3 
+
+Team Members: Christian Calhoun, Drew Dorris, Brandon Beaudry, Micah Crawford, Victoria Dixon, Liam Whitelaw, Raj Patel 
+
+Requirements: 
+
+Requirement 0  
+
+Create basic interface for testing so we can implement and test internal functionality before we work on a UI 
+
+--Basic functional UI (I.e., WriteLine) 
+
+Requirement 1 
+
+Needed to generate server logic, required for functionality of all future steps 
+
+--Establish basic server logic 
+
+--Communication from user to server and vice versa 
+
+Requirement 2 
+
+Hunt functionality requires email and text messaging in order to join clients 
+
+--Basic email and text message architecture 
+
+Requirement 3 
+
+The basic data types are required for further internal implementation of the features of the app 
+
+--Basic data types (Hunt, Task, etc.) 
+
+Requirement 4 
+
+This is the primary interaction for all users of this service; therefore, it needs to be completed early on 
+
+--Functionality of data types being interacted with and interacting with other data types (i.e., Hunts containing tasks, tasks being marked complete, etc.) 
+
+--Functionality of properties of data types, such as QR code data for tasks 
+
+Requirement 5 
+
+Assuming we have the internal functions of the program working, and just have the UI interface to complete, we will move on to the UI 
+
+--Begin implementing UI for user (landing screen, buttons to different pages, etc.) 
+
+Requirement 6 
+
+Full user UI needed to cap off the solution; influenced by implementation decisions in prior iterations 
+
+--Implement UI for interaction between user and data types (completing tasks in a hunt, scanning QR code, etc.) 
+
+Requirement 7  
+
+Admin UI is not critical, so it can be deferred 
+
+--Begin UI implementation for administration 
+
+--Implement UI for creation and editing of data types 
+
+ 
+
+Questions: 
+
+Does the length of your iterations factor into your choices? Explain. It was not a consideration as we planned, but in retrospect it likely would not have changed our decisions. Each requirement takes as long as it needs to take; therefore, no further requirements can proceed before prior requirements are satisfied. 
+
+Does the size of your team factor into your choices? The size of our team did not have an impact on the choices we made. 
+
+ 
