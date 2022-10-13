@@ -1,3 +1,9 @@
+WCK- I like this rationale. Having the UI mocked up gives the customer something "tangible" but it clearly isn't functional
+so their expectations are managed properly. Incrementally adding feature/functionality to each iteration so the customer 
+sees progress in each iteration is excellent and very much in keeping with Agile philosophy (did you peek ahead?). 
+Your explanation of the impact of team size and iteration duration is on the mark.
+
+
 Player
 
 Admin
