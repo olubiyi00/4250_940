@@ -1,3 +1,12 @@
+WCK- your use of the term Requirement instead of Iteration threw me off for a bit. It looks like you are working from the center out; 
+starting with your server side modeling, then server side logic, then adding client side connections to the server, etc.
+I agree with having the admin console last. That is a good call.
+I'm not sure about server side logic without having anything to initiate it but I guess you would use test drivers to prove
+out the paths (mimic of an API?). 
+The only real down side I see to your approach is that a customer has nothing "tangible" to interact with or look at.
+Thus, they may not feel like progress is getting made plus they have little to provide feedback on until several iterations in.
+
+
 BucHunt Iteration Group 3 
 
 Team Members: Christian Calhoun, Drew Dorris, Brandon Beaudry, Micah Crawford, Victoria Dixon, Liam Whitelaw, Raj Patel 
