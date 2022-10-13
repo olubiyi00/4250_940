@@ -1,6 +1,16 @@
 Group of Six: Zach Hower, John Milhorn, Chase Walton, Brendan Jones, Oluwatofunmi Olubiyi, Elliot Kaferle
 
-First Iteration - Basic Prototype
+WCK- Your titles for each duration are similar to Sprint Goals in Scrum (did you peek ahead?)
+
+First Iteration - Basic Prototype 
+
+WCK- You don't need admin privileges as you could hard code a test data set in the initial release. 
+Plus, this semester we will only need one hunt active so putting the ability to start and create games in the first iteration is unnecessary.
+Try to think incrementally, you don't need the entire data model upfront. 
+Your first iteration is almost a complete solution so it will be a long iteration and require quite a few people.
+
+WCK- Your high level approach of Basic Prototype then enhanced user experience and then "quality of life" is a common approach (tried and true). I think the only issues I have is the content of each but that comes with experience. In reality, I think the first two iterations would end up taking 4 iterations.
+
 	1. Server Logic, All of it should be done since everything builds off this. Make game, but we need admin, which needs the server. 
 	2. Admin privileges to the server, send text or emails to players, add new task, and create hunt. Need a controller to start and create games and invite users to a new hunt.
 	3. Data model, contains the information that needed for creating a game, and the holds the data for players, hunts, and task list. Necessary for running a hunt.
@@ -20,3 +30,6 @@ Third iteration - Quality of Life
 	3. Implement feedback from first iteration.
   
 	Iteration timeframe: 3 weeks, Relatively small scale project. Team size would affect the time scale, more people it would be less time.
+	
+	WCK- "more people it would be less time" is true up to a point. Too many cooks get in each other's way. It is not unusual for "more people"
+	to cause further delays and reworking of code because of a lack or inability to effectively communicate.
